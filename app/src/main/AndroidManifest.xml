@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hiten_khatri.xmusic">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".ApplicationClass"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.XMusic"
+        tools:ignore="AllowBackup">
+        <activity android:name=".ArtistDetails"></activity>
+        <activity android:name=".StartupActivity" />
+        <activity
+            android:name=".AlbumDetails"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".SupportActivity"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".AboutAcitvity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.hiten_khatri.xmusic.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".PlayListSongList"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PlayList_"
+            android:label="My Playlists"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FavActivity"
+            android:label="Favorites"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PlaySong"
+            android:label="X Music"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MusicService"
+            android:enabled="true" />
+
+        <receiver
+            android:name=".NotificationReceiver"
+            android:enabled="true"
+            tools:ignore="ExportedReceiver">
+            <intent-filter>
+                <action android:name="actionprevious" />
+                <action android:name="actionnext" />
+                <action android:name="actionplay" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="ExtraText">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    <item
+        android:id="@+id/menu8"
+        android:orderInCategory="100"
+        android:checkable="true"
+        android:title="Visualizer Effect  "
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu1"
+        android:orderInCategory="100"
+        android:title="@string/equilizer"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu3"
+        android:orderInCategory="200"
+        android:title="@string/share"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu4"
+        android:orderInCategory="200"
+        android:title="@string/details"
+        android:visibility="visible"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu41"
+        android:orderInCategory="200"
+        android:title="@string/favorites"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu5"
+        android:orderInCategory="200"
+        android:title="@string/sleep_timer"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu7"
+        android:orderInCategory="200"
+        android:title="@string/close"
+        app:showAsAction="never" />
+</menu>

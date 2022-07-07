@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu23"
+        android:icon="@drawable/playlist_play"
+        android:orderInCategory="100"
+        android:title="@string/your_playlists"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
+
+    <item
+        android:id="@+id/menu20"
+        android:icon="@drawable/favorite_fill"
+        android:orderInCategory="100"
+        android:title="@string/favorites"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
+
+    <item
+        android:id="@+id/menu1"
+        android:orderInCategory="100"
+        android:title="@string/day"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu9"
+        android:orderInCategory="100"
+        android:title="@string/equilizer"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu5"
+        android:orderInCategory="200"
+        android:title="@string/timer"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu3"
+        android:orderInCategory="200"
+        android:title="@string/favorites"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu4"
+        android:orderInCategory="200"
+        android:title="@string/my_playlists"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu2"
+        android:orderInCategory="200"
+        android:title="@string/share_this_app"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu6"
+        android:orderInCategory="200"
+        android:title="@string/about_x_music"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu7"
+        android:orderInCategory="200"
+        android:title="@string/support_me"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu8"
+        android:orderInCategory="200"
+        android:title="@string/close"
+        app:showAsAction="never" />
+</menu>
